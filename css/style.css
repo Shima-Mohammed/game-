@@ -1,28 +1,35 @@
 
 body
 {
-	min-height: 300px ; 
+	
 	background-image: url(../images/back1.svg);
-	padding-bottom: 50px ;
-	vertical-align: middle ;
+	max-width: 100% ; 
+	min-height: 200px ;
+	
+	 
+	
 	
 }
 .clr
 {
 	clear: both ;
 }
+
 /******************************************************************/
 
 /*****************************game section style ************************/
 .game 
 {
-	min-height: 300px ; 
+	min-height: 200px ;
+	max-width: 100% ;
 	padding-bottom: 10px ; 
 	background-color: white  ;
-	margin-top: 75px ; 
+	margin-top: 75px ;  
 	border-radius: 10px; 
 	box-shadow: 1px 1px 10px #d9e7ff ;
-	max-width: 100% ;
+	
+	
+	
 	
 }
 /**********************start section **********************/
@@ -78,17 +85,189 @@ body
 	}
 	.game 
 	{
-		/*margin-top: 120px;*/
+		margin-top: 200px;
+	}
+}
+@media only screen and (max-width: 1500px)
+{
+	.game 
+	{
+		margin-top: 200px;
 	}
 }
 @media only screen and (max-width: 500px)
 {
 	.game .start .con-name  
 	{
-		top:40% ;
+		top:43% ;
 		left:46% ;
 		
 	}
 }
 
 /*********************end of start section ******************************/
+
+/****************************start of instruction secction *************/
+
+.game .inst
+{
+	min-height: 300px ; 
+	position: relative ; 
+	padding: 40px 20px  ;
+	padding-bottom: 20px ;
+	display: none ;
+}
+.game .inst h5 
+{
+	font-size: 3rem ;
+	color:#DC5D88 ;
+	letter-spacing: 3px ;
+	margin-bottom: 30px ;
+}
+.game .inst p 
+{
+	color:#8299cd ;
+	text-align: justify ;
+	font-weight: bold ;
+	margin-bottom: 30px ;
+	font-size: 1.5rem ;
+	letter-spacing: 2px ;
+}
+.game .inst img 
+{
+	max-width: 100% ;
+	margin-bottom: 30px ;
+}
+
+.game .inst .btn 
+{
+	padding:10px 30px ;
+	background-color: #DC5D88 ; 
+	color: #d9e7ff ;
+	outline: none ;
+	font-weight: bold ;
+	transition: all ease-in-out 0.5s ;
+}
+.game .inst .btn:hover
+{
+	background-color: rgba(217,231,255,0.2) ; 
+	color:#DC5D88 ; 
+	border:1px #DC5D88  solid ;
+}
+/****************************end of instruction secction *************/
+/****************************actual game design ******************************************/
+.game .con-game 
+{
+	min-height: 100px ; 
+	position: relative ; 
+	padding-bottom: 30px ;
+	display: none ;
+	
+	
+}
+
+
+/***************scoring*********/
+
+.game .con-game .scoring
+{
+	margin-bottom: 70px ;
+	padding: 40px 20px  ;
+}
+.game .con-game .scoring .you
+{
+	float:left ; 
+}
+.game .con-game .scoring .robot
+{
+	float: right ;
+}
+.game .con-game .scoring .you span , .game .con-game .scoring .robot span 
+{
+	color:#DC5D88 ;
+	
+}
+.game .con-game .scoring .you .yourscor , .game .con-game .scoring .robot .robotscor
+{
+	font-size: 5rem ;
+	color:#157b4e ;
+}
+
+/************************************hands*********************/
+.game .con-game .con-hands 
+{
+	min-height: 100px ; 
+}
+
+.game .con-game .con-hands li
+{
+	cursor: pointer ;
+	margin-left: 20px ;
+}
+
+
+.game .con-game .con-hands img 
+{
+	max-width: 100% ;
+}
+.game .con-game .con-hands h5 
+{
+	margin-bottom: 30px ; 
+	font-size: 2rem ;
+	color:#DC5D88 ;
+	letter-spacing: 2px ;
+}
+
+/*******************************************************/
+/*****************************con-one-result*****************/
+.game .con-game .con-one-result
+{
+	display: none ;
+}
+
+.game .con-game .con-one-result .con-user-image 
+{
+	float: left ; 
+}
+ .game .con-game .con-one-result .con-robot-image
+{
+	float: right ;
+}
+.game .con-game .con-one-result .con-user-image img ,  .game .con-game .con-one-result .con-robot-image img
+{
+	max-width: 100% ;
+}
+.game .con-game .con-one-result p 
+{
+	font-weight: bold ; 
+	font-size: 3rem ;
+}
+/**************************************************************************/
+.game .con-game .con-final-result
+{
+	display: none ; 
+}
+.game .con-game .con-final-result h5 
+{
+	color: #DC5D88 ; 
+	font-size: 2.5rem ; 
+	font-weight: bold ;
+}
+.game .con-game .con-final-result p 
+{
+	font-size: 2rem ;
+	font-weight: bold ;
+	
+}
+.game .con-game .con-final-result h6 
+{
+	text-decoration: underline ; 
+	color:#8299cd ; 
+	font-size: 1.5rem ;
+	cursor: pointer ; 
+}
+
+
+
+
+

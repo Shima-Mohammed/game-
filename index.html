@@ -18,8 +18,10 @@
 		<div class="container-fluid">
 			<div class="row">
 				
+				
 		
 		<!------------------------------game location---------------------------->
+				
 				<section class="game col-md-6 col-lg-offset-3 col-md-offset-3 col-xs-10 col-sm-offset-1 col-xs-offset-1">
 					<!---------------add  start section -------------------------->
 					<section class="start" id="startPage">
@@ -34,8 +36,142 @@
 					</section>
 					<!--------------------end of start section-------------------------->
 		
+		                   <!----------------------add instructions------------------->
+					<section class="inst" id="instructionsPage">
+						<h5>instructions</h5>
+						
+						<div class="col-xs-12 text-center "><img src="images/instruction.PNG"></div>
+						<div class=" col-xs-12 ">
+							<p >
+								click to choose the gesture you would like to play .rock defeats scissors , scissors defeats paper ,
+								and paper defeats rock . thr player who wins more in 10 rounds will be winner . 
+							</p>
+						</div>
+						
+						<div
+							 onclick="gotoplay()"
+							 class="con-btn text-center"><button class="btn">Start</button></div>
+					</section>
+					<!-----------------------end of instructions ------------->
 		
-		
+					<!----------------------- actual game design---------------->
+					<section class="con-game" id="mygame">
+						<!-----------------------scoring----------------->
+						<div class="scoring">
+							<div class="you">
+								<span class="yourscor" id="myscore">0</span>
+								<span>You</span>
+							</div>
+							<div class="robot">
+								<span>Robot</span>
+								<span class="robotscor" id="robotscore">0</span>
+								
+							</div>
+						</div>
+							<!--------------------end of scoring------------->
+						<!-----------------------hands---------------->
+						<div class="con-hands text-center" id="hands">
+							
+							<h5>Select Your Gesture</h5>
+							
+							<ul class="list-unstyled list-inline hidden-xs">
+								<li>
+									<div 
+								 onclick="play('rock')"
+								 title="Rock" 
+								 class=" text-center">
+								<img src="images/rock.jpg">
+							</div>
+								</li>
+								
+							
+								<li>
+									<div 
+								 onclick="play('paper')"
+								 title="Paper" 
+								 class="  text-center">
+								<img src="images/paper.jpg">
+							</div>
+									
+								</li>
+								<li>
+									<div 
+								 onclick="play('scissors')"
+								 title="Scissors" 
+								 class=" text-center">
+								<img src="images/tryyy.jpg">
+							</div>
+								</li>
+							</ul>
+							<!---------------------xs hands------------------->
+								<ul class="list-unstyled list-inline hidden-sm hidden-md hidden-lg">
+								<li>
+									<div 
+								 onclick="play('rock')"
+								 title="Rock" 
+								 class=" text-center">
+								<img src="images/rocksmall.jpg">
+							</div>
+								</li>
+								
+							
+								<li>
+									<div 
+								 onclick="play('paper')"
+								 title="Paper" 
+								 class="  text-center">
+								<img src="images/papersmall.jpg">
+							</div>
+									
+								</li>
+								<li>
+									<div 
+								 onclick="play('scissors')"
+								 title="Scissors" 
+								 class=" text-center">
+								<img src="images/tryyysmall.jpg">
+							</div>
+								</li>
+							</ul>
+							
+							
+						</div>
+						<!------------------end of hands-------------->
+						
+						<!---------------------------------------------->
+						<div class="con-one-result" id="oneRsult">
+							<div class="con-user-image">
+								<img id="userInputImage" src="">
+							</div>
+							<div class="con-robot-image">
+								<img id="robotInputImage"  src="">
+							</div>
+							<div class="clr"></div>
+							<p id="result" class="text-center"></p>
+						</div>
+						<!------------------------------------------------------->
+						<div class="con-final-result" id="conFinalResult">
+							<h5 class="text-center">Overall Result</h5>
+							<p id="finalresult" class="text-center"></p>
+							<h6 
+								onclick="playAgain()"
+								class="text-center">Play Again</h6>
+							
+							<h6 
+								onclick="location.reload()"
+								class="text-center">Go to home</h6>
+							
+							
+						</div>
+					</section>
+					
+					<!--------------------------------------------------------------->
+					
+					
+					
+					
+					
+					
 		
 		
 		
@@ -50,6 +186,7 @@
 			
 				</section>
 			<!---------------------------------end of game section-------------------------------->
+					
 		</div>
 		</div>
 		<!--------------------------end of class container fluid------------------------------------------->
